@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="Project3.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>PASSWORD GENERATOR</h1>
+        <div class="password-display">
+         <input readonly placeholder="PASSWORD" class="password">
+         <button class="button-copy">
+            <img src="copy.svg" alt="" class="copy">
+            <span class="copy-msg">Copied</span>
+         </button>
+        </div>
+        <div class="rules">
+            <div class="header">
+                <h3>Password Length</h3>
+                <p class="length"></p>
+            </div>
+                <input type="range" min="1" max="20" step="1" class="slider">
+            <ul>
+                <li>
+                    <input type="checkbox" class="checkbox" id="uppercase">
+                    <p class="checkbox-content">Inlcudes Uppercase Letters</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="lowercase" class="checkbox" >
+                    <p class="checkbox-content">Includes Lowercase letters</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="number" class="checkbox" >
+                    <p class="checkbox-content">Inlcudes numbers</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="symbol" class="checkbox" >
+                    <p class="checkbox-content">Inlcudes symbols</p>
+                </li>
+                
+            </ul>
+            <div class="strength">
+                <h3>Strength</h3>
+                <div class="color"></div>
+            </div>
+            <button class="generateButton">GENERATE PASSWORD</button>
+        </div>
+    </div>
+    <script src="Project3.js"></script>
+</body>
+</html>
